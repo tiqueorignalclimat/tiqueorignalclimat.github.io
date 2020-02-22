@@ -1,0 +1,24 @@
+---
+title: "equipe"
+author: "Projet TOC"
+output: html_document
+css: style.css
+---
+
+
+#Chercheurs
+
+#Professionnels de recherche
+
+#Étudiants gradués
+
+## Axe 1. 
+
+- Delphine de Pierre (2017- présent)
+
+- Catherine Pouchet (2019 - présent)
+
+## Axe 2. 
+
+## Axe 3.
+

@@ -1,0 +1,15 @@
+---
+title: "Communications"
+author: "Projet TOC"
+output: html_document
+---
+
+# Publications scientifiques
+
+## Articles révisés par les pairs
+
+## Thèses de doctorats et mémoires
+
+## Affiches scientifiques
+
+# Dossier regroupant les bulletins d'informations

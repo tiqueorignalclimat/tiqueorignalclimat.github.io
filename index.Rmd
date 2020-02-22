@@ -1,0 +1,54 @@
+---
+title: "Projet TOC"
+author: ""
+output: html_document
+css: style.css
+---
+# Partenariat de recherche sur les relations tique-orignal-climat
+### Comprendre et prédire la dynamique des interactions entre la tique d’hiver et les populations d’orignaux de l’est du Canada en fonction des conditions climatiques actuelles et anticipées
+
+\vspace{12pt}
+
+## Contexte du projet
+
+programme de recherche et développement visant à comprendre et prédire la dynamique des interactions entre la tique d’hiver (*Dermacentor albipictus*) et les populations d’orignaux (*Alces americanus*) de l’est du Canada en fonction des conditions climatiques présentes et anticipées. 
+
+
+Envoyer info sur la tique via site du MFFP et du NB
+Cycle de la tique d'hiver de Delphine
+
+## Objectifs et axes de recherche
+
+
+
+### Axes d'intérêts
+
+1. Santé, dynamique et écologie des populations d'orignaux
+    + Condition physique, dynamique des populations et utilisation de l'espace par les orignaux en réponse aux variations des infestations par la tique d'hiver
+2. Biologie et épidémiologie de la tique d'hiver (*D. albipictus*)
+    + Épidémiologie de la tique d'hiver en relation avec les autres parasites, l'abondance des orignaux et les changements environnementaux
+3. Gestion participative
+    + Développement d’une approche de science participative pour multiplier la résolution spatiotemporelle du suivi des infestations et améliorer notre capacité d’adaptation aux changements écologiques. 
+
+### Approche méthodologique
+
+Notre méthode s'appuie sur le marquage et le suivi par télémétrie satellite de trois cohortes de veaux orignaux (116 veaux par cohorte), le segment le plus susceptible des populations, dans 5 populations le long d’un gradient de latitude allant du sud du Nouveau-Brunswick (45° N) au nord du fleuve Saint-Laurent (47,5° N). Nous suivrons aussi 80 orignaux adultes de divers âges.
+
+Nous obtiendrons ainsi une variation interannuelle et interrégionale des conditions environnementales propices ou non aux infestations des orignaux par *D. albipictus*. Nous procéderons de plus à une manipulation expérimentale de la charge de *D. albipictus* par l’application d’un pesticide sur la moitié des orignaux capturés afin de distinguer les effets des conditions de l’environnement biophysique régionales de ceux du niveau d’infestation par D. albipictus.
+
+## Contacts 
+
+__Jean-Pierre Tremblay__, *Professeur titulaire* 
+
+([Page Web](https://www.bio.ulaval.ca/departement-et-professeurs/professeurs-et-personnel/professeurs/fiche/show/tremblay-jean-pierre/)) 
+
+<i class="fa fa-phone"></i> : +1-418-656-2131 #403629 
+
+<i class="glyphicon glyphicon-envelope" style="font-size:16px"></i> : jean-pierre.tremblay@bio.ulaval.ca
+
+<i class="fa fa-address-card-o"></i> : Département de biologie, Université Laval
+1045 av. de la médecine, Québec (Qc), G1V 0A6
+
+__Questions générales__ (incluant envoi d’informations, photos, formulaires) : 
+
+<i class="glyphicon glyphicon-envelope" style="font-size:16px"></i> : toc@bio.ulaval.ca
