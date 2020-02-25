@@ -1,54 +1,153 @@
 ---
-title: "Projet TOC"
+title: <p align="middle"> Partenariat de recherche sur les relations tique-orignal-climat </p>
 author: ""
 output: html_document
 css: style.css
+logo: logo.png
 ---
-# Partenariat de recherche sur les relations tique-orignal-climat
-### Comprendre et prédire la dynamique des interactions entre la tique d’hiver et les populations d’orignaux de l’est du Canada en fonction des conditions climatiques actuelles et anticipées
 
-\vspace{12pt}
+\
 
-## Contexte du projet
+<p align="middle">*Comprendre et prédire la dynamique des interactions entre la tique d’hiver et les populations d’orignaux de l’est du Canada en fonction des conditions climatiques actuelles et anticipées*</p>
 
-programme de recherche et développement visant à comprendre et prédire la dynamique des interactions entre la tique d’hiver (*Dermacentor albipictus*) et les populations d’orignaux (*Alces americanus*) de l’est du Canada en fonction des conditions climatiques présentes et anticipées. 
+___
+
+<p float="left" align="middle">
+  <img src="images/mesures_catherine2.png" alt="mesures" style="width:3in;"/>
+  <img src="images/capture_nick_2.jpg" alt="capture" style="width:3in;"/> 
+  <img src="images/thermo.jpg" alt="capture" style="width:3in;"/>
+</p>
+
+___
+
+## Contexte et objectif du projet
+
+Le déplacement de nombreuses espèces vers les pôles et le devancement dans le temps des étapes de leurs cycles vitaux sont des conséquences du réchauffement climatique qui entraînent une modification des interactions entre les espèces, notamment les interactions parasites-hôtes. La tique d'hiver (*Dermacentor albipictus*) est un acarien qui parasite les grands vertébrés et peut entraîner des mortalités chez certaines espèces peu adaptées à sa présence en région boréale, notamment l'orignal (*Alces alces*). Cette situation soulève des enjeux à travers l'aire de répartition de l'orignal où il contribue à l'appartenance au territoire, à l'identité culturelle et à la cohésion sociale, ainsi qu'à la vitalité économique des régions.
+
+Ce programme de recherche et de développement vise à comprendre et prédire la dynamique des interactions entre la tique d’hiver  et les populations d’orignaux  de l’est du Canada en fonction des conditions climatiques présentes et anticipées. 
+
+\
+\
 
 
-Envoyer info sur la tique via site du MFFP et du NB
-Cycle de la tique d'hiver de Delphine
+<p align="middle">
+  <img src="images/cycle_tick.png" alt="cycle_tyck" style="width:6in;"/>
+</p> 
 
-## Objectifs et axes de recherche
+<p style="font-size:14px" > **Figure 1.** *Cycle vital de la tique d'hiver.* </p> 
 
+\
+\
+\
 
+___
 
 ### Axes d'intérêts
 
-1. Santé, dynamique et écologie des populations d'orignaux
+1. **Santé, dynamique et écologie des populations d'orignaux**
     + Condition physique, dynamique des populations et utilisation de l'espace par les orignaux en réponse aux variations des infestations par la tique d'hiver
-2. Biologie et épidémiologie de la tique d'hiver (*D. albipictus*)
+
+\
+    
+2. **Biologie et épidémiologie de la tique d'hiver **
     + Épidémiologie de la tique d'hiver en relation avec les autres parasites, l'abondance des orignaux et les changements environnementaux
-3. Gestion participative
+
+\
+    
+3. **Gestion participative**
     + Développement d’une approche de science participative pour multiplier la résolution spatiotemporelle du suivi des infestations et améliorer notre capacité d’adaptation aux changements écologiques. 
+
+\
+
+<p align="middle">
+  <img src="images/cycle_epidemio.png" alt="cycle" style="width:6in;"/>
+</p> 
+
+<p style="font-size:14px" > **Figure 2.** *Insertion des axes d'intérêt du projet de recherche dans le schéma conceptuel représentant le triangle épidémiologique à la base des interactions reliant la tique d'hiver, l'orginal et l'écosystème où cohabitent les deux espèces.* </p> 
+
+\
+\
+\
+
+___
 
 ### Approche méthodologique
 
-Notre méthode s'appuie sur le marquage et le suivi par télémétrie satellite de trois cohortes de veaux orignaux (116 veaux par cohorte), le segment le plus susceptible des populations, dans 5 populations le long d’un gradient de latitude allant du sud du Nouveau-Brunswick (45° N) au nord du fleuve Saint-Laurent (47,5° N). Nous suivrons aussi 80 orignaux adultes de divers âges.
+Notre méthode s'appuie sur le suivi par télémétrie satellite d'orignaux, notamment les veaux qui sont plus susceptibles à la tique, dans 5 populations le long d'un gradient de latitude allant du sud du Nouveau-Brunswick (45° N) au nord du fleuve Saint-Laurent (47,5° N; figure 3.). Nous manipulerons expérimentalement la charge de tiques par l'application d'un pesticide sur la moitié des orignaux capturés afin de distinguer les effets de l'environnement régional de ceux du niveau d'infestation. Nous obtiendrons ainsi une variation interannuelle et interrégionale des conditions environnementales propices ou non aux infestations des orignaux par la tique d'hiver.
 
-Nous obtiendrons ainsi une variation interannuelle et interrégionale des conditions environnementales propices ou non aux infestations des orignaux par *D. albipictus*. Nous procéderons de plus à une manipulation expérimentale de la charge de *D. albipictus* par l’application d’un pesticide sur la moitié des orignaux capturés afin de distinguer les effets des conditions de l’environnement biophysique régionales de ceux du niveau d’infestation par D. albipictus.
+Nos travaux mèneront notamment à la formulation de recommandations pour moduler les interventions dans les milieux à valeurs fauniques élevés afin de réduire les risques de cooccurrence des tiques et des orignaux.  
+
+
+\
+\
+
+```{r map_capture, echo=FALSE, message=FALSE, warning=FALSE}
+require(tidyverse); require(sf); require(mapview); require(knitr); require(leaflet)
+secteurs <- tribble(
+  ~what, ~latitude, ~longitude, 
+  "Nouveau-Brunswick", 46.0640097,-66.2818157,
+  "Capitale-Nationale",47.2110091,-70.7304825,
+  "Forillon", 48.9031234,-64.3796644, 
+  "Parc de la Vérendrye", 47.140186, -77.015181,
+  "Bas-St-Laurent",48.112315, -67.795112
+)
+secteurs$veaux=c(24,24,9,19,24)
+secteurs$adultes=c(0,0,13,0,0)
+
+secteurs_sf =secteurs %>%
+  st_as_sf(coords = c("longitude", "latitude"), crs = 4326) #What does crs mean?
+ 
+leaflet(secteurs,width = "100%") %>% 
+  addTiles(options = providerTileOptions(minZoom=4, maxZoom=8)) %>% 
+  addCircleMarkers(
+    radius = 15,
+    color = "orange",
+    stroke = FALSE,
+    fillOpacity = 0.5,
+    popup= paste("Secteur : ", secteurs$what,"<br>",
+                 "Nombre de veaux capturés :", secteurs$veaux,"<br>",
+                 "Nombre d'adultes capturés :", secteurs$adultes, "<br>")
+  ) %>%  
+  setView(lat=47.2110091, lng=-70.7304825, zoom=6) %>% 
+  leafem::addMouseCoordinates() %>% 
+  addMiniMap(
+    tiles = providers$Esri.WorldStreetMap,
+    toggleDisplay = FALSE)
+
+
+```
+
+<p style="font-size:14px" > **Figure 3.** *Carte interactive des cinq secteurs de captures de veaux et de femelles adultes pour l'hiver 2019. Cliquez sur un point pour obtenir davantage d'information.* </p> 
+
+\
+\
+\
+
+___
 
 ## Contacts 
+```{r setup, include=FALSE}
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
 
-__Jean-Pierre Tremblay__, *Professeur titulaire* 
+__Jean-Pierre Tremblay__, *Professeur titulaire* ([Page Web](https://www.bio.ulaval.ca/departement-et-professeurs/professeurs-et-personnel/professeurs/fiche/show/tremblay-jean-pierre/)) 
 
-([Page Web](https://www.bio.ulaval.ca/departement-et-professeurs/professeurs-et-personnel/professeurs/fiche/show/tremblay-jean-pierre/)) 
+<i class="fa fa-phone"> </i> : +1-418-656-2131 #403629 
 
-<i class="fa fa-phone"></i> : +1-418-656-2131 #403629 
+<i class="glyphicon glyphicon-envelope" style="font-size:16px"> </i> : jean-pierre.tremblay@bio.ulaval.ca
 
-<i class="glyphicon glyphicon-envelope" style="font-size:16px"></i> : jean-pierre.tremblay@bio.ulaval.ca
-
-<i class="fa fa-address-card-o"></i> : Département de biologie, Université Laval
+<i class="fa fa-address-card"> </i> : Département de biologie, Université Laval
 1045 av. de la médecine, Québec (Qc), G1V 0A6
 
 __Questions générales__ (incluant envoi d’informations, photos, formulaires) : 
 
 <i class="glyphicon glyphicon-envelope" style="font-size:16px"></i> : toc@bio.ulaval.ca
+
+\
+
+___
+
+<p float="left" align="middle">
+  <img src="images/partners.png" alt="mesures" style="width:9in;"/>
+</p>
+

@@ -1,7 +1,9 @@
 title: Florent Déry
 name: "toc_website"
 output_dir: "."
+
 navbar:
+  title: "<img id=\"logo\" style=\"width: 30px;\" src=\"logo.png\" />"
   type: inverse
   right:
     - text: "Accueil - Home"
