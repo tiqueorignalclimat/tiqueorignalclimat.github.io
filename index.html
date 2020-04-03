@@ -9,10 +9,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
-<meta name="author" content="" />
 
 
-<title>index.utf8</title>
+<title>Carte - map</title>
 
 <script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -36,8 +35,6 @@
 <link href="site_libs/leaflet-minimap-3.3.1/Control.MiniMap.min.css" rel="stylesheet" />
 <script src="site_libs/leaflet-minimap-3.3.1/Control.MiniMap.min.js"></script>
 <script src="site_libs/leaflet-minimap-3.3.1/Minimap-binding.js"></script>
-<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
-<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -116,93 +113,6 @@ summary {
 </style>
 
 
-<style type="text/css">
-/* padding for bootstrap navbar */
-body {
-  padding-top: 51px;
-  padding-bottom: 40px;
-}
-/* offset scroll position for anchor links (for fixed navbar)  */
-.section h1 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h2 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h3 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h4 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h5 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.section h6 {
-  padding-top: 56px;
-  margin-top: -56px;
-}
-.dropdown-submenu {
-  position: relative;
-}
-.dropdown-submenu>.dropdown-menu {
-  top: 0;
-  left: 100%;
-  margin-top: -6px;
-  margin-left: -1px;
-  border-radius: 0 6px 6px 6px;
-}
-.dropdown-submenu:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-submenu>a:after {
-  display: block;
-  content: " ";
-  float: right;
-  width: 0;
-  height: 0;
-  border-color: transparent;
-  border-style: solid;
-  border-width: 5px 0 5px 5px;
-  border-left-color: #cccccc;
-  margin-top: 5px;
-  margin-right: -10px;
-}
-.dropdown-submenu:hover>a:after {
-  border-left-color: #ffffff;
-}
-.dropdown-submenu.pull-left {
-  float: none;
-}
-.dropdown-submenu.pull-left>.dropdown-menu {
-  left: -100%;
-  margin-left: 10px;
-  border-radius: 6px 0 6px 6px;
-}
-</style>
-
-<script>
-// manage active state of menu based on current page
-$(document).ready(function () {
-  // active menu anchor
-  href = window.location.pathname
-  href = href.substr(href.lastIndexOf('/') + 1)
-  if (href === "")
-    href = "index.html";
-  var menuAnchor = $('a[href="' + href + '"]');
-
-  // mark it active
-  menuAnchor.parent().addClass('active');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
-});
-</script>
 
 <!-- tabsets -->
 
@@ -276,146 +186,21 @@ $(document).ready(function () {
 
 
 
-<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"></a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="index.html">Accueil</a>
-</li>
-<li>
-  <a href="equipe.html">Équipe</a>
-</li>
-<li>
-  <a href="comm.html">Communications</a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
-
 <div class="fluid-row" id="header">
 
 
 
-<h1 class="title toc-ignore"><p align="middle">
-Partenariat de recherche sur les relations tique-orignal-climat
-</p></h1>
 
 </div>
 
 
 <p><br />
 </p>
-<p align="middle">
-<em>Comprendre et prédire la dynamique des interactions entre la tique d’hiver et les populations d’orignaux de l’est du Canada en fonction des conditions climatiques actuelles et anticipées</em>
-</p>
-<hr />
-<p float="left" align="middle">
-<img src="images/mesures_catherine2.png" alt="mesures" style="width:3in;"/> <img src="images/capture_nick_2.jpg" alt="capture" style="width:3in;"/> <img src="images/thermo.jpg" alt="capture" style="width:3in;"/>
-</p>
-<hr />
-<div id="contexte-et-objectif-du-projet" class="section level2">
-<h2>Contexte et objectif du projet</h2>
-<p>Le déplacement de nombreuses espèces vers les pôles et le devancement dans le temps des étapes de leurs cycles vitaux sont des conséquences du réchauffement climatique qui entraînent une modification des interactions entre les espèces, notamment les interactions parasites-hôtes. La tique d’hiver (<em>Dermacentor albipictus</em>) est un acarien qui parasite les grands vertébrés et peut entraîner des mortalités chez certaines espèces peu adaptées à sa présence en région boréale, notamment l’orignal (<em>Alces alces</em>). Cette situation soulève des enjeux à travers l’aire de répartition de l’orignal où il contribue à l’appartenance au territoire, à l’identité culturelle et à la cohésion sociale, ainsi qu’à la vitalité économique des régions.</p>
-<p>Ce programme de recherche et de développement vise à comprendre et prédire la dynamique des interactions entre la tique d’hiver et les populations d’orignaux de l’est du Canada en fonction des conditions climatiques présentes et anticipées.</p>
-<p><br />
-<br />
-</p>
-<p align="middle">
-<img src="images/cycle_tick.png" alt="cycle_tyck" style="width:6in;"/>
-</p>
+<div id="htmlwidget-b4a5e86c9351043cfab3" style="width:100%;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-b4a5e86c9351043cfab3">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":4,"maxZoom":8,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addPolygons","args":[[[[{"lng":[-66.6969,-66.91113,-66.89465,-66.65295,-66.6969],"lat":[45.49634,45.51559,45.80736,45.76331,45.49634]}]],[[{"lng":[-64.31204,-64.39993,-64.51941,-64.37247,-64.20767,-64.31204],"lat":[48.82748,48.8546,48.92503,48.96922,48.86002,48.82748]}]],[[{"lng":[-76.20447,-77.06689,-77.07788,-76.12756,-75.49585,-76.20447],"lat":[46.61096,46.95326,47.3418,47.47192,47.21882,46.61096]}]],[[{"lng":[-66.27393,-66.29041,-65.71362,-65.55981,-66.27393],"lat":[45.90301,46.01184,46.08047,45.94504,45.90301]}]],[[{"lng":[-68.47668,-68.30914,-68.08392,-67.68842,-67.71719,-68.12265,-68.47668],"lat":[47.91584,48.2682,48.28466,48.07037,47.99998,47.91584,47.91584]}]],[[{"lng":[-71.0777,-71.24799,-70.50641,-70.33063,-70.67944,-71.0777],"lat":[47.05478,47.2192,47.7685,47.71678,47.16694,47.05478]}]]],null,null,{"interactive":true,"className":"","stroke":true,"color":"darkorange","weight":5,"opacity":0.5,"fill":true,"fillColor":"darkorange","fillOpacity":0.5,"smoothFactor":1,"noClip":false},["Région/ Area : N.-Brunswick<br>Veaux/ Calves : 24<br>Adultes/ Adults : 0","Région/ Area : Forillon<br>Veaux/ Calves : 14<br>Adultes/ Adults : 15","Région/ Area : Hautes-Laurentides<br>Veaux/ Calves : 19<br>Adultes/ Adults : 0","Région/ Area : N.-Brunswick<br>Veaux/ Calves : 24<br>Adultes/ Adults : 0","Région/ Area : Bas-St-Laurent<br>Veaux/ Calves : 25<br>Adultes/ Adults : 0","Région/ Area : Capitale-Nationale<br>Veaux/ Calves : 24<br>Adultes/ Adults : 0"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,"Esri.WorldStreetMap","bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]}],"limits":{"lat":[45.49634,48.96922],"lng":[-77.07788,-64.20767]},"setView":[[47.2110091,-70.7304825],6,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n      function(el, x, data) {\n      // get the leaflet map\n      var map = this; //HTMLWidgets.find('#' + el.id);\n      // we need a new div element because we have to handle\n      // the mouseover output separately\n      // debugger;\n      function addElement () {\n      // generate new div Element\n      var newDiv = $(document.createElement('div'));\n      // append at end of leaflet htmlwidget container\n      $(el).append(newDiv);\n      //provide ID and style\n      newDiv.addClass('lnlt');\n      newDiv.css({\n      'position': 'relative',\n      'bottomleft':  '0px',\n      'background-color': 'rgba(255, 255, 255, 0.7)',\n      'box-shadow': '0 0 2px #bbb',\n      'background-clip': 'padding-box',\n      'margin': '0',\n      'padding-left': '5px',\n      'color': '#333',\n      'font': '9px/1.5 \"Helvetica Neue\", Arial, Helvetica, sans-serif',\n      'z-index': '700',\n      });\n      return newDiv;\n      }\n\n\n      // check for already existing lnlt class to not duplicate\n      var lnlt = $(el).find('.lnlt');\n\n      if(!lnlt.length) {\n      lnlt = addElement();\n\n      // grab the special div we generated in the beginning\n      // and put the mousmove output there\n\n      map.on('mousemove', function (e) {\n      if (e.originalEvent.ctrlKey) {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                           ' lon: ' + (e.latlng.lng).toFixed(5) +\n                           ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                           ' | zoom: ' + map.getZoom() +\n                           ' | x: ' + L.CRS.EPSG3857.project(e.latlng).x.toFixed(0) +\n                           ' | y: ' + L.CRS.EPSG3857.project(e.latlng).y.toFixed(0) +\n                           ' | epsg: 3857 ' +\n                           ' | proj4: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs ');\n      } else {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                      ' lon: ' + (e.latlng.lng).toFixed(5) +\n                      ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                      ' | zoom: ' + map.getZoom() + ' ');\n      }\n      });\n\n      // remove the lnlt div when mouse leaves map\n      map.on('mouseout', function (e) {\n      var strip = document.querySelector('.lnlt');\n      strip.remove();\n      });\n\n      };\n\n      //$(el).keypress(67, function(e) {\n      map.on('preclick', function(e) {\n      if (e.originalEvent.ctrlKey) {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                      ' lon: ' + (e.latlng.lng).toFixed(5) +\n                      ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                      ' | zoom: ' + map.getZoom() + ' ');\n      var txt = document.querySelector('.lnlt').textContent;\n      console.log(txt);\n      //txt.innerText.focus();\n      //txt.select();\n      setClipboardText('\"' + txt + '\"');\n      }\n      });\n\n      //map.on('click', function (e) {\n      //  var txt = document.querySelector('.lnlt').textContent;\n      //  console.log(txt);\n      //  //txt.innerText.focus();\n      //  //txt.select();\n      //  setClipboardText(txt);\n      //});\n\n      function setClipboardText(text){\n      var id = 'mycustom-clipboard-textarea-hidden-id';\n      var existsTextarea = document.getElementById(id);\n\n      if(!existsTextarea){\n      console.log('Creating textarea');\n      var textarea = document.createElement('textarea');\n      textarea.id = id;\n      // Place in top-left corner of screen regardless of scroll position.\n      textarea.style.position = 'fixed';\n      textarea.style.top = 0;\n      textarea.style.left = 0;\n\n      // Ensure it has a small width and height. Setting to 1px / 1em\n      // doesn't work as this gives a negative w/h on some browsers.\n      textarea.style.width = '1px';\n      textarea.style.height = '1px';\n\n      // We don't need padding, reducing the size if it does flash render.\n      textarea.style.padding = 0;\n\n      // Clean up any borders.\n      textarea.style.border = 'none';\n      textarea.style.outline = 'none';\n      textarea.style.boxShadow = 'none';\n\n      // Avoid flash of white box if rendered for any reason.\n      textarea.style.background = 'transparent';\n      document.querySelector('body').appendChild(textarea);\n      console.log('The textarea now exists :)');\n      existsTextarea = document.getElementById(id);\n      }else{\n      console.log('The textarea already exists :3')\n      }\n\n      existsTextarea.value = text;\n      existsTextarea.select();\n\n      try {\n      var status = document.execCommand('copy');\n      if(!status){\n      console.error('Cannot copy text');\n      }else{\n      console.log('The text is now on the clipboard');\n      }\n      } catch (err) {\n      console.log('Unable to copy.');\n      }\n      }\n\n\n      }\n      ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
 <p style="font-size:14px">
-<strong>Figure 1.</strong> <em>Cycle vital de la tique d’hiver.</em>
+<strong>Carte interactive des cinq secteurs de captures de veaux et de femelles adultes pour l’hiver 2019. Cliquez sur un point pour obtenir davantage d’information (Pour le Nouveau-Brunswick, les nombres donnés représentent le nombre total d’orignaux capturés pour les deux secteurs; ainsi, le même nombre est montré deux fois). Dernière mise à jour = Avril 2020.</strong> - <em>Interactive map of the five regions where calf and adult female moose were captured at winter 2019. Click on a location for more information (For New-Brunswick, numbers shown represent the sum moose captured in both areas, so that the same number is shown twice). Last update = April 2020</em>
 </p>
-<p><br />
-<br />
-<br />
-</p>
-<hr />
-<div id="axes-dintérêts" class="section level3">
-<h3>Axes d’intérêts</h3>
-<ol style="list-style-type: decimal">
-<li><strong>Santé, dynamique et écologie des populations d’orignaux</strong>
-<ul>
-<li>Condition physique, dynamique des populations et utilisation de l’espace par les orignaux en réponse aux variations des infestations par la tique d’hiver</li>
-</ul></li>
-</ol>
-<p><br />
-</p>
-<ol start="2" style="list-style-type: decimal">
-<li><strong>Biologie et épidémiologie de la tique d’hiver </strong>
-<ul>
-<li>Épidémiologie de la tique d’hiver en relation avec les autres parasites, l’abondance des orignaux et les changements environnementaux</li>
-</ul></li>
-</ol>
-<p><br />
-</p>
-<ol start="3" style="list-style-type: decimal">
-<li><strong>Gestion participative</strong>
-<ul>
-<li>Développement d’une approche de science participative pour multiplier la résolution spatiotemporelle du suivi des infestations et améliorer notre capacité d’adaptation aux changements écologiques.</li>
-</ul></li>
-</ol>
-<p><br />
-</p>
-<p align="middle">
-<img src="images/cycle_epidemio.png" alt="cycle" style="width:6in;"/>
-</p>
-<p style="font-size:14px">
-<strong>Figure 2.</strong> <em>Insertion des axes d’intérêt du projet de recherche dans le schéma conceptuel représentant le triangle épidémiologique à la base des interactions reliant la tique d’hiver, l’orginal et l’écosystème où cohabitent les deux espèces.</em>
-</p>
-<p><br />
-<br />
-<br />
-</p>
-<hr />
-</div>
-<div id="approche-méthodologique" class="section level3">
-<h3>Approche méthodologique</h3>
-<p>Notre méthode s’appuie sur le suivi par télémétrie satellite d’orignaux, notamment les veaux qui sont plus susceptibles à la tique, dans 5 populations le long d’un gradient de latitude allant du sud du Nouveau-Brunswick (45° N) au nord du fleuve Saint-Laurent (47,5° N; figure 3.). Nous manipulerons expérimentalement la charge de tiques par l’application d’un pesticide sur la moitié des orignaux capturés afin de distinguer les effets de l’environnement régional de ceux du niveau d’infestation. Nous obtiendrons ainsi une variation interannuelle et interrégionale des conditions environnementales propices ou non aux infestations des orignaux par la tique d’hiver.</p>
-<p>Nos travaux mèneront notamment à la formulation de recommandations pour moduler les interventions dans les milieux à valeurs fauniques élevés afin de réduire les risques de cooccurrence des tiques et des orignaux.</p>
-<p><br />
-<br />
-</p>
-<div id="htmlwidget-cea29fb2f89fd47fa9be" style="width:100%;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-cea29fb2f89fd47fa9be">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"errorTileUrl":"","noWrap":false,"detectRetina":false,"minZoom":4,"maxZoom":8,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addCircleMarkers","args":[[46.0640097,47.2110091,48.9031234,47.140186,48.112315],[-66.2818157,-70.7304825,-64.3796644,-77.015181,-67.795112],15,null,null,{"interactive":true,"className":"","stroke":false,"color":"orange","weight":5,"opacity":0.5,"fill":true,"fillColor":"orange","fillOpacity":0.5},null,null,["Secteur :  Nouveau-Brunswick <br> Nombre de veaux capturés : 24 <br> Nombre d'adultes capturés : 0 <br>","Secteur :  Capitale-Nationale <br> Nombre de veaux capturés : 24 <br> Nombre d'adultes capturés : 0 <br>","Secteur :  Forillon <br> Nombre de veaux capturés : 9 <br> Nombre d'adultes capturés : 13 <br>","Secteur :  Parc de la Vérendrye <br> Nombre de veaux capturés : 19 <br> Nombre d'adultes capturés : 0 <br>","Secteur :  Bas-St-Laurent <br> Nombre de veaux capturés : 24 <br> Nombre d'adultes capturés : 0 <br>"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addMiniMap","args":[null,"Esri.WorldStreetMap","bottomright",150,150,19,19,-5,false,false,false,false,false,false,{"color":"#ff7800","weight":1,"clickable":false},{"color":"#000000","weight":1,"clickable":false,"opacity":0,"fillOpacity":0},{"hideText":"Hide MiniMap","showText":"Show MiniMap"},[]]}],"limits":{"lat":[46.0640097,48.9031234],"lng":[-77.015181,-64.3796644]},"setView":[[47.2110091,-70.7304825],6,[]]},"evals":[],"jsHooks":{"render":[{"code":"function(el, x, data) {\n  return (\n      function(el, x, data) {\n      // get the leaflet map\n      var map = this; //HTMLWidgets.find('#' + el.id);\n      // we need a new div element because we have to handle\n      // the mouseover output separately\n      // debugger;\n      function addElement () {\n      // generate new div Element\n      var newDiv = $(document.createElement('div'));\n      // append at end of leaflet htmlwidget container\n      $(el).append(newDiv);\n      //provide ID and style\n      newDiv.addClass('lnlt');\n      newDiv.css({\n      'position': 'relative',\n      'bottomleft':  '0px',\n      'background-color': 'rgba(255, 255, 255, 0.7)',\n      'box-shadow': '0 0 2px #bbb',\n      'background-clip': 'padding-box',\n      'margin': '0',\n      'padding-left': '5px',\n      'color': '#333',\n      'font': '9px/1.5 \"Helvetica Neue\", Arial, Helvetica, sans-serif',\n      'z-index': '700',\n      });\n      return newDiv;\n      }\n\n\n      // check for already existing lnlt class to not duplicate\n      var lnlt = $(el).find('.lnlt');\n\n      if(!lnlt.length) {\n      lnlt = addElement();\n\n      // grab the special div we generated in the beginning\n      // and put the mousmove output there\n\n      map.on('mousemove', function (e) {\n      if (e.originalEvent.ctrlKey) {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                           ' lon: ' + (e.latlng.lng).toFixed(5) +\n                           ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                           ' | zoom: ' + map.getZoom() +\n                           ' | x: ' + L.CRS.EPSG3857.project(e.latlng).x.toFixed(0) +\n                           ' | y: ' + L.CRS.EPSG3857.project(e.latlng).y.toFixed(0) +\n                           ' | epsg: 3857 ' +\n                           ' | proj4: +proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs ');\n      } else {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                      ' lon: ' + (e.latlng.lng).toFixed(5) +\n                      ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                      ' | zoom: ' + map.getZoom() + ' ');\n      }\n      });\n\n      // remove the lnlt div when mouse leaves map\n      map.on('mouseout', function (e) {\n      var strip = document.querySelector('.lnlt');\n      strip.remove();\n      });\n\n      };\n\n      //$(el).keypress(67, function(e) {\n      map.on('preclick', function(e) {\n      if (e.originalEvent.ctrlKey) {\n      if (document.querySelector('.lnlt') === null) lnlt = addElement();\n      lnlt.text(\n                      ' lon: ' + (e.latlng.lng).toFixed(5) +\n                      ' | lat: ' + (e.latlng.lat).toFixed(5) +\n                      ' | zoom: ' + map.getZoom() + ' ');\n      var txt = document.querySelector('.lnlt').textContent;\n      console.log(txt);\n      //txt.innerText.focus();\n      //txt.select();\n      setClipboardText('\"' + txt + '\"');\n      }\n      });\n\n      //map.on('click', function (e) {\n      //  var txt = document.querySelector('.lnlt').textContent;\n      //  console.log(txt);\n      //  //txt.innerText.focus();\n      //  //txt.select();\n      //  setClipboardText(txt);\n      //});\n\n      function setClipboardText(text){\n      var id = 'mycustom-clipboard-textarea-hidden-id';\n      var existsTextarea = document.getElementById(id);\n\n      if(!existsTextarea){\n      console.log('Creating textarea');\n      var textarea = document.createElement('textarea');\n      textarea.id = id;\n      // Place in top-left corner of screen regardless of scroll position.\n      textarea.style.position = 'fixed';\n      textarea.style.top = 0;\n      textarea.style.left = 0;\n\n      // Ensure it has a small width and height. Setting to 1px / 1em\n      // doesn't work as this gives a negative w/h on some browsers.\n      textarea.style.width = '1px';\n      textarea.style.height = '1px';\n\n      // We don't need padding, reducing the size if it does flash render.\n      textarea.style.padding = 0;\n\n      // Clean up any borders.\n      textarea.style.border = 'none';\n      textarea.style.outline = 'none';\n      textarea.style.boxShadow = 'none';\n\n      // Avoid flash of white box if rendered for any reason.\n      textarea.style.background = 'transparent';\n      document.querySelector('body').appendChild(textarea);\n      console.log('The textarea now exists :)');\n      existsTextarea = document.getElementById(id);\n      }else{\n      console.log('The textarea already exists :3')\n      }\n\n      existsTextarea.value = text;\n      existsTextarea.select();\n\n      try {\n      var status = document.execCommand('copy');\n      if(!status){\n      console.error('Cannot copy text');\n      }else{\n      console.log('The text is now on the clipboard');\n      }\n      } catch (err) {\n      console.log('Unable to copy.');\n      }\n      }\n\n\n      }\n      ).call(this.getMap(), el, x, data);\n}","data":null}]}}</script>
-<p style="font-size:14px">
-<strong>Figure 3.</strong> <em>Carte interactive des cinq secteurs de captures de veaux et de femelles adultes pour l’hiver 2019. Cliquez sur un point pour obtenir davantage d’information.</em>
-</p>
-<p><br />
-<br />
-<br />
-</p>
-<hr />
-</div>
-</div>
-<div id="contacts" class="section level2">
-<h2>Contacts</h2>
-<p><strong>Jean-Pierre Tremblay</strong>, <em>Professeur titulaire</em> (<a href="https://www.bio.ulaval.ca/departement-et-professeurs/professeurs-et-personnel/professeurs/fiche/show/tremblay-jean-pierre/">Page Web</a>)</p>
-<p><i class="fa fa-phone"> </i> : +1-418-656-2131 #403629</p>
-<p><i class="glyphicon glyphicon-envelope" style="font-size:16px"> </i> : <a href="mailto:jean-pierre.tremblay@bio.ulaval.ca" class="email">jean-pierre.tremblay@bio.ulaval.ca</a></p>
-<p><i class="fa fa-address-card"> </i> : Département de biologie, Université Laval 1045 av. de la médecine, Québec (Qc), G1V 0A6</p>
-<p><strong>Questions générales</strong> (incluant envoi d’informations, photos, formulaires) :</p>
-<p><i class="glyphicon glyphicon-envelope" style="font-size:16px"></i> : <a href="mailto:toc@bio.ulaval.ca" class="email">toc@bio.ulaval.ca</a></p>
-<p><br />
-</p>
-<hr />
-<p float="left" align="middle">
-<img src="images/partners.png" alt="mesures" style="width:9in;"/>
-</p>
-</div>
 
 
 

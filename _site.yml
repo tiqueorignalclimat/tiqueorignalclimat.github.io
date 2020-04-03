@@ -1,17 +1,6 @@
-title: Florent Déry
-name: "Projet TOC"
+title: Carte - Map
+name: "Carte - Map"
 output_dir: "."
-
-navbar:
-  title: ""
-  type: inverse
-  right:
-    - text: "Accueil"
-      href: index.html
-    - text: "Équipe"
-      href: equipe.html
-    - text: "Communications"
-      href: comm.html
 
 output:
   html_document:
