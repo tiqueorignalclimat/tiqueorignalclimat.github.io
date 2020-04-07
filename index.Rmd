@@ -45,4 +45,4 @@ leaflet(secteurs, width = "100%") %>%
 
 ```
 
-<p style="font-size:14px" > **Carte interactive des cinq secteurs de captures de veaux et de femelles adultes pour l’hiver 2019. Cliquez sur un point pour obtenir davantage d’information (Pour le Nouveau-Brunswick, les nombres donnés représentent le nombre total d'orignaux capturés pour les deux secteurs; ainsi, le même nombre est montré deux fois). Dernière mise à jour =  Avril 2020.** - *Interactive map of the five regions where  moose calves and adult females were captured at winter 2019. Click on a location for more information (For New-Brunswick, numbers shown represent the total number of moose captured in both areas, so that the same number is shown twice). Last update = April 2020* </p>
+<p style="font-size:14px" >**Carte interactive des cinq secteurs de captures de veaux et de femelles adultes pour l’hiver 2020. Cliquez sur un point pour obtenir davantage d’information; Dernière mise à jour = Avril 2020.** - *Interactive map of the five regions where  moose calves and adult females were captured at winter 2020. Click on a location for more information. Last update = April 2020*</p>
