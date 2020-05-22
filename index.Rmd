@@ -27,7 +27,7 @@ polys = secteurs %>%
 secteurs=left_join(polys, secteurs[!duplicated(secteurs$area),], by="area")
 
 leaflet(secteurs, width = "100%") %>% 
-  addTiles(options = providerTileOptions(minZoom=4, maxZoom=8)) %>% 
+  addProviderTiles(providers$Esri.WorldImagery, options = providerTileOptions(minZoom=4, maxZoom=8)) %>% 
   addPolygons(data = secteurs, 
               fill = TRUE,
               color = "darkorange",
@@ -45,4 +45,4 @@ leaflet(secteurs, width = "100%") %>%
 
 ```
 
-<p style="font-size:14px" >**Carte interactive des cinq secteurs de captures de veaux et de femelles adultes pour l’hiver 2020. Cliquez sur un point pour obtenir davantage d’information; Dernière mise à jour = Avril 2020.** - *Interactive map of the five regions where moose calves and adult females were captured during winter 2020. Click on a location for more information. Last update = April 2020*</p>
+<p style="font-size:14px" >**Carte interactive des cinq sites d'étude où se sont déroulées les captures de veaux et de femelles adultes pour l’hiver 2020. Cliquez sur un point pour obtenir davantage d’information; Dernière mise à jour = Mai 2020.** - *Interactive map of the five regions where moose calves and adult females were captured during winter 2020. Click on a location for more information. Last update = May 2020*</p>
