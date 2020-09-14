@@ -27,7 +27,7 @@ polys = secteurs %>%
 secteurs=left_join(polys, secteurs[!duplicated(secteurs$area),], by="area")
 
 leaflet(secteurs, width = "100%") %>% 
-  addProviderTiles(providers$Esri.WorldImagery, options = providerTileOptions(minZoom=4, maxZoom=8)) %>% 
+  addProviderTiles(providers$OpenStreetMap.DE, options = providerTileOptions(minZoom=4, maxZoom=8)) %>% 
   addPolygons(data = secteurs, 
               fill = TRUE,
               color = "darkorange",
