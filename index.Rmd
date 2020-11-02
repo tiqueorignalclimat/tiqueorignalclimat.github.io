@@ -22,7 +22,7 @@ polys = secteurs %>%
   group_by(area) %>% 
   summarise() %>%
   st_cast("POLYGON")%>% 
-  st_convex_hull()
+  st_collect()
 
 secteurs=left_join(polys, secteurs[!duplicated(secteurs$area),], by="area")
 

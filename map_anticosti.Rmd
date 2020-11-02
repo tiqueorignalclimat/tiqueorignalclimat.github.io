@@ -1,0 +1,27 @@
+---
+pagetitle: "Carte d'Anticosti - Anticosti map"
+output: html_document
+css: style.css
+editor_options:
+  chunk_output_type: console
+---
+
+\
+
+```{r map_anticosti, echo=FALSE, message=FALSE, warning=FALSE}
+
+
+require(tidyverse); require(sf); require(mapview); require(knitr); require(leaflet)
+
+leaflet( width = "100%") %>% 
+  addProviderTiles(providers$OpenStreetMap, options = providerTileOptions(minZoom=4, maxZoom=15)) %>% 
+  setView(lat=49.55, lng=-62.75, zoom=8) %>% 
+  leafem::addMouseCoordinates(FALSE) %>% 
+  addMiniMap(
+    tiles = providers$Esri.WorldStreetMap,
+    toggleDisplay = FALSE)
+
+
+```
+
+<p style="font-size:14px" >**Carte interactive de l'Île d'Anticosti.** - *Interactive map of Anticosti Island*</p>
