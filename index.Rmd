@@ -21,13 +21,12 @@ polys = secteurs %>%
   st_as_sf(coords = c("longitude", "latitude"), crs = 4326) %>%
   group_by(area) %>% 
   summarise() %>%
-  st_cast("POLYGON")%>% 
-  st_collect()
+  st_cast("POLYGON")
 
 secteurs=left_join(polys, secteurs[!duplicated(secteurs$area),], by="area")
 
 leaflet(secteurs, width = "100%") %>% 
-  addProviderTiles(providers$OpenStreetMap.DE, options = providerTileOptions(minZoom=4, maxZoom=8)) %>% 
+  addProviderTiles(providers$OpenStreetMap, options = providerTileOptions(minZoom=4, maxZoom=8)) %>% 
   addPolygons(data = secteurs, 
               fill = TRUE,
               color = "darkorange",

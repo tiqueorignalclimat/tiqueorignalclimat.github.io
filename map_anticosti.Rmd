@@ -15,7 +15,7 @@ require(tidyverse); require(sf); require(mapview); require(knitr); require(leafl
 
 leaflet( width = "100%") %>% 
   addProviderTiles(providers$OpenStreetMap, options = providerTileOptions(minZoom=4, maxZoom=15)) %>% 
-  addProviderTiles(providers$OpenStreetMap.DE, options = providerTileOptions(minZoom=4, maxZoom=15)) %>% 
+  addProviderTiles(providers$OpenStreetMap, options = providerTileOptions(minZoom=4, maxZoom=15)) %>% 
   setView(lat=49.55, lng=-62.75, zoom=8) %>% 
   leafem::addMouseCoordinates(FALSE) %>% 
   addMiniMap(
